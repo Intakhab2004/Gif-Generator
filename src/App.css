@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(183, 129, 234, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2{
+  margin-top: 20px;
+  width: 95%;
+  height: 2.3rem;
+  background-color: rgb(54, 3, 80);
+  box-shadow: 1px 3px 12px 1px rgb(181, 0, 184);
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.generatorTab{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 50%;
+  height: fit-content;
+  background-color: aliceblue;
+  box-shadow: 0 0 20px 0.3px rgb(54, 3, 80);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  margin-bottom: 12px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 650;
+}
+button{
+  margin-top: 12px;
+  width: 80%;
+  height: 1.75rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(181, 0, 184, 0.234);
+  cursor: pointer;
+}
+button:hover{
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  background-color: rgba(181, 0, 184, 0.437);
+}
+input{
+  width: 80%;
+  height: 1.75rem;
+  padding-left: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.115);
+  margin-top: 12px;
+}
+input:focus{
+  outline: none;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: #474bff #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+  100% {
+     transform: rotate(1turn);
+  }
+}
